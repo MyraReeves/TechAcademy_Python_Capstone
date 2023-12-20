@@ -107,7 +107,7 @@ MainProject/log.json
 # Ignore all migrations #
 /AppBuilder9000/*/migrations/*
 
-#requirements.txt
+requirements.txt
 
 # ItemsApp #
 AppBuilder9000/ItemsApp/data/*.json
