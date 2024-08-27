@@ -2,6 +2,7 @@
 virtualenvironment/
 VirtualEnvironment/
 laptop_venv/
+pyVenv/
 
 # Django #
 *.log
@@ -74,6 +75,7 @@ ENV/
 env.bak/
 venv.bak/
 venv
+pyVenv/
 
 # mkdocs documentation
 /site
