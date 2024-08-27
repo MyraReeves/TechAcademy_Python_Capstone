@@ -27,6 +27,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+Scripts/
 lib64/
 parts/
 sdist/
@@ -76,6 +77,7 @@ env.bak/
 venv.bak/
 venv
 pyVenv/
+pyvenv.cfg
 
 # mkdocs documentation
 /site
