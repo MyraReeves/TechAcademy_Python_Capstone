@@ -2,6 +2,7 @@
 virtualenvironment/
 VirtualEnvironment/
 laptop_venv/
+
 # Django #
 *.log
 *.pot
