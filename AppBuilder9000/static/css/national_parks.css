@@ -1,0 +1,24 @@
+
+header {
+    color:#98fb98;
+    background-color: #964b00;
+    text-align: center;
+    font-family: "Rowdies", sans-serif;
+    font-size: 30pt;
+    padding: 10px;
+}
+
+body {
+    background-image: url("../images/national_parks/background1.jpg");
+    background-size: 100%;
+}
+
+.checklist {
+    width: 25%;
+    background-color: #d0f0c0;
+}
+
+.checklist h4 {
+    text-decoration: underline;
+    text-align: center;
+}
