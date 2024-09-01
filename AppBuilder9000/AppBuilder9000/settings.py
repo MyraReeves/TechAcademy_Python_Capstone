@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_bootstrap5',
     'crispy_forms',
     'WA_National_Parks',
+    'Checklist',
 ]
 
 MIDDLEWARE = [
