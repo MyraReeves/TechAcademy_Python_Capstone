@@ -297,7 +297,18 @@ ul#scene {
 }
 .grid {
   margin: 0 auto;
+  text-align: center;
 }
+
+.AppLinks {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.AppLinks a {
+    font-size:18pt;
+}
+
 .grid-item {
   width: 450px;
   margin-bottom: 10px;
@@ -305,17 +316,19 @@ ul#scene {
 h2.sub-title {
   position: relative;
   display: block;
-  margin: 70px auto;
+  margin-top: 70px;
   text-align: center;
   font-size: 40px;
   line-height: 40px;
+  padding-bottom: 30px;
 }
+
 h2.sub-title::after {
   display: block;
   height: 2px;
   background-color: black;
   content: "";
-  width: 100px;
+  width: 500px;
   margin: 30px auto 0 auto;
 }
 /*MASONRY JS STYLES END*/
