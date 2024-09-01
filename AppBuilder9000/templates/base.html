@@ -9,7 +9,10 @@
     <title>
         {% block title %}Python Live Project{% endblock %}
     </title>
-    {% block tab-icon %}<link rel="icon" href="{% static 'images/png-icons/robot4.png' %}">{% endblock %}
+    {% block tab-icon %}
+        <link rel="icon" href="{% static 'images/png-icons/robot4.png' %}">
+        <link rel="icon" href="{% static 'images/png-icons/tree1.png' %}">
+    {% endblock %}
     {% block stylesheets %}
         <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -29,9 +32,10 @@
                 <header>
                     <nav class="nav-wrapper">
                         <div class="logo">
-                            <a href="{% url 'home' %}">
-                                {% block nav-icon %}<img src="{% static 'images/png-icons/robot4.png' %}">{% endblock %}
-                            </a>
+                            {% block nav-icon %}
+                                <a href="{% url 'Washington' %}" style="font-size:18pt;"><img src="{% static 'images/png-icons/tree1.png' %}"></a>
+                                <a href="{% url 'home' %}"><img src="{% static 'images/png-icons/robot4.png' %}"></a>
+                            {% endblock %}
                         </div>
                         <ul class="menu">
                             <li><a href="{% block home-button %}{% url 'home' %}{% endblock %}">Home</a></li>
