@@ -1,0 +1,31 @@
+{% extends "parks_base.html" %}
+
+{% block title %}NatParks-Add_comments{% endblock %}
+
+{% block header %}
+👀 The trees have ears! 👀
+<h2 style="font-size: 14pt;">Here is some of what they have overheard</h2>
+{% endblock %}
+
+{% block main %}
+    <main style="overflow: visible;">
+
+        <div class="form1">
+            <div class="form-center">
+                <h1>Add your comments here:</h1>
+                <form method="POST" action="{% url 'visitor_entry' %}" style="overflow: auto; height: 1000px;">
+                    <div>
+                        {% csrf_token %}
+                        {{ form.non_field_errors }}
+                        {{ form.as_p }}
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit Comment" name="Save_Item">
+                        <a href="{% url 'comments' %}"><button type="button" value="Cancel">Cancel</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

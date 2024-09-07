@@ -7,14 +7,17 @@
 }
 
 .top_navigation a {
+    display: block;
+    margin-left: 5px;
     font-family: "Rowdies", sans-serif;
-    color: #195905;
+    color: #ffb347;
     text-decoration: none;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .top_navigation a:hover {
-    color: #d0f0c0;
+    color: #195905;
+    text-decoration: none;
 }
 
 
@@ -29,12 +32,35 @@ header {
 
 body {
     background-image: url("../Images/background1.jpg");
+    background-repeat: no-repeat;
     background-size: 100%;
 }
+
+/* --------------------------------------------------------- */
+
+.button1 {
+    text-align: center;
+    width: 200px;
+    padding: 3px;
+    margin-left: 45%;
+    margin-top: 15px;
+    color: #195905;
+    background-color: #f0fff0;
+}
+
+.button1:hover {
+    width: 250px;
+    margin-left: 43%;
+    color: black;
+    background-color: white;
+}
+
+/* --------------------------------------------------------- */
 
 .checklist {
     width: 22%;
     background-color: #d0f0c0;
+    margin-left: 20px;
     padding-bottom: 10px;
 }
 
@@ -50,13 +76,124 @@ body {
     padding-left: 3px;
 }
 
+/* --------------------------------------------------------- */
+
+.comments {
+    margin: 30px 10px;
+    line-height: 1.3;
+}
+
+.comments button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #d0f0c0;
+}
+
+.comments button:hover {
+    color: #d0f0c0;
+    background-color: #195905;
+}
+
+#states {
+    margin-left: 10px;
+}
+
+#states a {
+    font-size: 16pt;
+    color: #d0f0c0;
+    text-decoration: none;
+}
+
+#states a:hover {
+    font-size: 17pt;
+    color: #ff8f00;
+    text-decoration: underline;
+}
+
+.tiny-footnote {
+    margin-top: 10px;
+    font-size: 9pt;
+}
+
+/* --------------------------------------------------------- */
+
+.form1 {
+    background-color: #dcdcdc;
+    padding: 10px 20px;
+}
+
+.form-center {
+    margin-left: 33%;
+    width: 33%;
+}
+
+.form-center h1 {
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------------------------- */
+
+.previous-comments {
+    margin: 20px 3px 5px 0;
+    display: block;
+}
+
+/* ------------------ */
+
+.previousComments {
+    display: inline-block;
+    width: 330px;
+    text-align: center;
+}
+
+.previousComments th {
+    font-size: 30pt;
+    font-family: "Dancing Script";
+    color: #f0fff0;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+.previousComments td {
+    width: 50%;
+}
+
+.memorable-sights {
+    background-color:  #d0f0c0;
+    width: 34%;
+    padding: 3px 3px 10px 5px;
+    margin: 50px 25px 10px 10px;
+    border: solid 2px #964b00;
+    box-shadow: 5px 10px 18px black;
+    display: inline-block;
+    overflow: auto;
+}
+
+.memorable-sights h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-family: "Rowdies", sans-serif;
+    color: #195905;
+    text-shadow: 1px 1px black;
+    word-spacing: 7px;
+    letter-spacing: 2px;
+    }
+
+.memorable-sights td {
+    padding: 0 10px 10px 10px;
+    overflow: auto;
+}
+
+/* --------------------------------------------------------- */
 
 footer {
     background-color: black;
     color: #d0f0c0;
     padding: 5px;
-    width: 95%;
-    position:absolute;
+    width: 100%;
+    position: fixed;
     bottom:0;
 }
 

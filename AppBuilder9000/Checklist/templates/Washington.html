@@ -1,19 +1,16 @@
-{% extends "parks_base.html" %}
+{% extends "base.html" %}
 
 {% block title %}WA_NatParks{% endblock %}
 
 {% block header %}Washington State{% endblock %}
 
 {% block main %}
-    <div style="text-align: center;">
-        Choose which park you would like to visit:
-    </div>
 
      <div class="checklist">
             <h4>Parks:</h4>
             {% for park in parklist %}
             <ul>
-                <li>🌲{{park.name}}</li>
+                <li>{{ park.name}}</li>
             </ul>
             {% endfor %}
      </div>

@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('', include('Checklist.urls')),
+    path('', include('NationalParks.urls')),
 ]

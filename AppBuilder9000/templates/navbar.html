@@ -1,2 +1,16 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<a href="{% url 'home' %}">🤖 AppBuilder9000</a>
+<div class="JavaScriptDropdown">
+			<div class="btn-group">
+				<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#menu">Navigation Menu</button>
+				<div id="menu" class="collapse">
+					<br><br>
+					<a href="{% url 'home' %}">🤖 AppBuilder9000</a>
+                    <a href="{% url 'parks' %}">🧭 Gateway to Exploration</a>
+                    <a href="{% url 'comments' %}">💬 Visitor Comments</a>
+				</div>
+			</div>
+		</div>

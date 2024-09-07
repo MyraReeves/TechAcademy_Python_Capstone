@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'WA_National_Parks',
     'Checklist',
+    'NationalParks',
 ]
 
 MIDDLEWARE = [

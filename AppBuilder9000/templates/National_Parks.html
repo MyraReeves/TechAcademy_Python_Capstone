@@ -1,0 +1,24 @@
+{% extends "parks_base.html" %}
+
+{% block title %}NationalParks{% endblock %}
+
+{% block header %}🏞 &nbsp; Visit Your National Parks! &nbsp; 🏞{% endblock %}
+
+{% block main %}
+    <div class="comments">
+        <h4>Want to share your national park experiences with others while preserving a cherished memory from your visit? <br>
+            Log your park experiences:</h4>
+        <a href="{% url 'visitor_entry' %}"><button type="button">Add visitation notes</button></a>
+    </div>
+
+     <div id="states">
+         <h2>Interested in visiting a location within the national park system?</h2>
+         <h3>Look up basic visitor information using our park database!</h3>
+         <br>
+         <h4>To begin, please choose which state you will be visiting:</h4>
+         🔸 <a href="{% url 'Washington' %}">Washington</a>
+
+        <p class="tiny-footnote">* Additional states will be added to the list as we add parks to our database</p>
+     </div>
+
+{% endblock %}
