@@ -5,12 +5,29 @@
 {% block header %}Washington State{% endblock %}
 
 {% block main %}
-    <div style="text-align: center;">
-        Choose which park you would like to visit:
+    <p class="centered-text">Choose which park you would like to visit:</p>
+
+    <div class="park-selection">
+        <form name="parkForm" method="POST" action="">
+            <div class="formObject">
+                {% csrf_token %}
+                <label for="park_id">Name:</label>
+                <select id="park_id" name="WApark" onChange="top.location.href=this.options[this.selectedIndex].value;">
+                    {% for park in parklist  %}
+                        <option value="../{{ park.pk }}/park_details/">{{ park.name }}</option>
+                    {% endfor %}
+                </select>
+
+                <div class="form_button_area">
+                    <a href=""><button type="button" class="form_button">*disabled placeholder*</button></a>
+                    <a href="{% url 'parks' %}"><button type="button" class="form_button">Choose a different state</button></a>
+                </div>
+            </div>
+        </form>
     </div>
 
      <div class="checklist">
-            <h4>Parks:</h4>
+            <h4>The following locations are part of the national park system:</h4>
             {% for park in parklist %}
             <ul>
                 <li>🌲{{park.name}}</li>

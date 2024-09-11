@@ -1,0 +1,28 @@
+{% extends "parks_base.html" %}
+
+{% block title %}Park_Info{% endblock %}
+
+{% block header %}Washington State{% endblock %}
+
+{% block main %}
+
+    <div class="park-info-container">
+        <table>
+            {% csrf_token %}
+            <tr><th> {{ park.name }} {{park.type}} </th></tr>
+            <tr><td> {{park.description}} </td></tr>
+            <tr><td> <a href="{{park.website}}">{{park.website}}</a> </td></tr>
+            <tr><td class="extra-space-above"> Visitor Center Hours: {{park.visitor_center_hours}}</td></tr>
+            <tr><td class="extra-space-above"> {{park.phone}} </td></tr>
+            <tr><td class="extra-space-above"> Mail general inquiries to:<br> {{park.mail_to}} <br> {{park.mailing_street_address}} <br> {{park.city}}, {{park.state}} &nbsp; {{park.zipcode}}</td></tr>
+        </table>
+
+        <div class="form_button_area">
+            <a href="{{park.google_maps_link}}"><button type="button" class="form_button">🚗 Directions/Info on Google Maps</button></a>
+            <a href="{% url 'visitor_entry' %}"><button type="button" class="form_button">📝 Leave comments about your visit</button></a>
+            <a href="{% url 'Washington' %}"><button type="button" class="form_button">🧭 Choose a different park</button></a>
+        </div>
+
+    </div>
+
+{% endblock %}

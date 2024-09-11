@@ -56,12 +56,59 @@ body {
 }
 
 /* --------------------------------------------------------- */
+.centered-text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.extra-space-above {
+    padding-top: 10px;
+}
+/* --------------------------------------------------------- */
+
+.park-selection {
+    margin: 0 auto;
+    padding: 10px;
+    width: 30%;
+    height: 90%;
+    background-color: #e0ffff;
+    border: 2px solid #964b00;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.park-selection:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.form_button_area{
+    margin-top: 40px;
+}
+
+.form_button {
+    color: #195905;
+    border: 1px solid #964b00;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 3px 5px;
+}
+
+.form_button:hover {
+    background-color: #195905;
+    color: #f5fffa;
+}
 
 .checklist {
     width: 22%;
     background-color: #d0f0c0;
     margin-left: 20px;
     padding-bottom: 10px;
+    box-shadow: 0 5px 15px #343434;
+    border-radius: 10px;
 }
 
 .checklist h4 {
@@ -184,6 +231,28 @@ body {
 .memorable-sights td {
     padding: 0 10px 10px 10px;
     overflow: auto;
+}
+
+/* --------------------------------------------------------- */
+
+.park-info-container {
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    background-color: #e0ffff;
+    border: 2px solid #964b00;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.park-info-container th {
+    font-size: 16pt;
+}
+
+.park-info-container tr {
+    margin-bottom: 50px;
 }
 
 /* --------------------------------------------------------- */
