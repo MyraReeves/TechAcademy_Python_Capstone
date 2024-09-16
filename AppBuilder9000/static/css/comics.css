@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+}
+
+.top_navigation {
+    background-color: #fadfad;
+    background-image: linear-gradient(to bottom right, #765d47, #fadfad, #765d47);
+}
+
+.top_navigation a {
+    display: block;
+    margin-left: 5px;
+    font-family: "Rowdies", sans-serif;
+    color: red;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+.top_navigation a:hover {
+    color: #195905;
+    text-decoration: none;
+}
+
+header {
+    color: black;
+    background-color: #fadfad;
+    background-image: linear-gradient(to bottom left, #765d47, #fadfad, #765d47);
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 30pt;
+    word-spacing: 8px;
+    padding: 10px;
+}
+
+body {
+    color: #87cefa;
+    background:  linear-gradient(to left, #000, #000), #000000 url("../Images/comics/superhero1.jpg") 500px 130px no-repeat fixed;
+}
+
+/* ================================================================================= */
+
+.left_one-fourth_column{
+    width: 25%;
+    float: left;
+}
+
+.center_column {
+    width: 50%;
+    margin: 20px 0 0 500px;
+}
+
+.add_comic_button {
+    margin: 15px 0 35px 10px;
+    text-align: center;
+}
+
+.oval_button {
+    border-radius: 50%;
+    border: 2px solid yellow;
+    background-color: #006400;
+    color: yellow;
+    padding: 30px 15px;
+}
+
+.collection_list {
+    background-color: #fadfad;
+    color: #0000cd;
+    margin: 5px 0 0 30px;
+    padding: 1px 0 0 20px;
+    border: double #4169e1 7px;
+}
+
+.collection_list h4 {
+    color: #e51a4c;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.collection_list ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.comicbook-selection {
+    background-color: #fadfad;
+    color: #0000cd;
+    margin: 30px 0 0 30px;
+    padding: 15px 0 10px 10px;
+    border: 3px solid #b19cd9;
+}
+
+.comicbook-selection:hover , .oval_button:hover  {
+    box-shadow: -1px 1px 20px #faebd7;
+}
+
+.comicbook-selection p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* ================================================================================= */
+
+.change_collection {
+    margin: 30px auto;
+    width: 30%;
+}
+
+.change_collection label {
+    color: #fadfad;
+    margin-right: 15px;
+}
+
+.change_collection input {
+    width: 300px;
+}
+
+.formButton_container {
+    margin: 10px 5px;
+    text-align: center;
+}
+
+.submitButton {
+    background-color: #f0fff0;
+    color: green;
+    font-weight: bold;
+    margin: 30px 0 10px 5px;
+    padding: 2px 100px;
+}
+
+.submitButton:hover {
+    background-color: green;
+    color: #f0fff0;
+    box-shadow: -1px 1px 10px #faebd7;
+}
+
+.formButton, .formButton_red {
+    padding: 5px 10px;
+    background-color: #e7feff;
+    margin: 0 20px 0 5px;
+}
+
+.formButton:hover {
+    color: #e7feff;
+    background-color: blue;
+    box-shadow: -1px 1px 10px #faebd7;
+}
+
+.formButton_red {
+    color: red;
+}
+
+.formButton_red:hover {
+    color: #e7feff;
+    background-color: red;
+    box-shadow: -1px 1px 10px #faebd7;
+}
+
+/* ================================================================================= */
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #fadfad;
+    background-image: linear-gradient(to right, #6b5441, #fadfad, #6b5441 );
+    text-align: center;
+    bottom: 0;
+}

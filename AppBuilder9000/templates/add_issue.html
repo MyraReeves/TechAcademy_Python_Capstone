@@ -1,0 +1,26 @@
+{% extends "comics_base.html" %}
+
+{% block title %}Comic books{% endblock %}
+
+{% block header %}📚 Add to your collection! 📚{% endblock %}
+
+{% block main %}
+
+    <div class="change_collection">
+        <form name="ComicbookForm" method="POST" action="{% url 'add_comic' %}">
+            <table>
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                {{ form.as_p }}
+            </table>
+            <div>
+                <input type="submit" name="Save_Item" class="submitButton">
+
+                <div>
+                <a href="{% url 'collection' %}"><button type="button" class="formButton" style="margin-top: 15px;">💫 Cancel 💫 </button></a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

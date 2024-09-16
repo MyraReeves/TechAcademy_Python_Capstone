@@ -1,0 +1,20 @@
+{% extends "comics_base.html" %}
+
+{% block title %}Delete{% endblock %}
+
+{% block header %}💢 Delete 💢{% endblock %}
+
+{% block main %}
+
+<form method="POST" action=".">
+    {% csrf_token %}
+    <h2 style="color: red">Confirmation Needed</h2>
+    <p style="color: white; font-size: 18pt;">Are you sure you wish to delete {{entry.Series_Title}} #{{entry.Issue_number}}?</p>
+
+    {{ entry.as_p }}
+
+    <input type="submit" value="Yes, I am sure! 💣 DELETE IT! 💣" class="formButton_red">
+    <a href="{% url 'collection' %}"><button type="button" class="formButton">No! Take me back! 😥 CANCEL!</button></a>
+</form>
+
+{% endblock %}

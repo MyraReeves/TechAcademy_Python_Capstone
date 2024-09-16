@@ -11,7 +11,6 @@
     </title>
     {% block tab-icon %}
         <link rel="icon" href="{% static 'images/png-icons/robot4.png' %}">
-        <link rel="icon" href="{% static 'images/png-icons/tree1.png' %}">
     {% endblock %}
     {% block stylesheets %}
         <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -35,6 +34,7 @@
                             {% block nav-icon %}
                                 <a href="{% url 'parks' %}" style="font-size:18pt;"><img src="{% static 'images/png-icons/tree1.png' %}"></a>
                                 <a href="{% url 'home' %}"><img src="{% static 'images/png-icons/robot4.png' %}"></a>
+                                <a href="{% url 'collection' %}"><img src="{% static 'images/png-icons/zap_small.png' %}"></a>
                             {% endblock %}
                         </div>
                         <ul class="menu">

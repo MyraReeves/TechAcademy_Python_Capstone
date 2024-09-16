@@ -1,0 +1,28 @@
+{% extends "comics_base.html" %}
+
+{% block title %}Comic books{% endblock %}
+
+{% block header %}💥️ Edit or delete this entry 💥️{% endblock %}
+
+{% block main %}
+
+<div class="change_collection" style="width: 35%;">
+    <form name="ComicbookForm" method="POST" action="../edit_comic/">
+        <table>
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            {{ form.as_table }}
+        </table>
+        <div class="formButton_container">
+            <input type="submit" value="Submit edit" class="submitButton">
+
+            <div class="formButton_container">
+                <a href="../{{form.pk}}delete_comic/"><button type="button" class="formButton_red">💢 DELETE 💢</button></a>
+                <a href="{% url 'collection' %}"><button type="button" class="formButton">💫 Cancel Request</button></a>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}

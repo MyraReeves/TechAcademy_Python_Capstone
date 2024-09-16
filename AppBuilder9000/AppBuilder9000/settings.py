@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'WA_National_Parks',
     'Checklist',
     'NationalParks',
+    'Comics',
 ]
 
 MIDDLEWARE = [

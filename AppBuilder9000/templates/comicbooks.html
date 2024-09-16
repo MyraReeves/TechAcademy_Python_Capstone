@@ -1,0 +1,51 @@
+{% extends "comics_base.html" %}
+
+{% block title %}Comic books{% endblock %}
+
+{% block header %}🦹🏿‍♂️ Keep track of your comic book collection here! 🦸🏻‍♀️{% endblock %}
+
+{% block main %}
+
+    <div class="left_one-fourth_column">
+         <div class="add_comic_button">
+            <a href="{% url 'add_comic' %}"><button type="button" class="oval_button">⚡ Log a new addition to your collection! ⚡</button></a>
+        </div>
+
+         <div class="collection_list">
+                <h4><img src="./static/images/comics/collections_icon.png" alt="icon of a comic book" style="margin-right: 10px">Your current collection<img src="./static/images/comics/collections_icon.png" alt="icon of a comic book" style="margin-left: 10px"></h4>
+                {% for comic in comic_collection %}
+                    <ul>
+                    {% if comic.Series_Title == "-------------------" %}
+                        <li>&nbsp; </li>
+                    {% else %}
+                            <li>⚡ <i>{{comic.Series_Title}}</i> &nbsp; #{{comic.Issue_number}}</li>
+                    {% endif %}
+                    </ul>
+                {% endfor %}
+         </div>
+
+            <div class="comicbook-selection">
+            <p>Edit or delete an entry by selecting it below:</p>
+            <form name="ComicbookForm" method="POST" action="">
+                <div class="formObject">
+                    {% csrf_token %}
+                    <label for="entry_id">Name 🔸 Issue</label>
+                    <select id="entry_id" name="comicbook_entry" onChange="top.location.href=this.options[this.selectedIndex].value;">
+                        {% for comic in comic_collection %}
+                            {% if comic.Series_Title == "-------------------" %}
+                                <option value="{% url 'collection' %}"> &nbsp; </option>
+                            {% else %}
+                                <option value="../{{ comic.pk }}/edit_comic/">{{ comic.Series_Title }} 🔸 #{{comic.Issue_number}}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="center_column">
+        <img src="./static/images/comics/superhero1.jpg" alt="Silhouette of a male superhero in front of a tan and brown star burst ray pattern">
+    </div>
+
+{% endblock %}

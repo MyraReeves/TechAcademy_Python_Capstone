@@ -8,18 +8,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/comics.css' %}">
 
     <title>{% block title %} {% endblock %}</title>
-        {% block tab-icon %}
-            <link rel="icon" href="{% static 'images/png-icons/tree1.png' %}">
-        {% endblock %}
 </head>
 <body>
     <div class="top_navigation">
-        {% include "navbar.html" %}
+        {% include "comics_navbar.html" %}
     </div>
 
     <header>{% block header %} {% endblock %}</header>
@@ -29,7 +25,7 @@
     </main>
 
     <footer>
-        {% include "WA_footer.html" %}
+        {% include "comics_footer.html" %}
     </footer>
 
 </body>

@@ -14,12 +14,15 @@
                 <label for="park_id">Name:</label>
                 <select id="park_id" name="WApark" onChange="top.location.href=this.options[this.selectedIndex].value;">
                     {% for park in parklist  %}
-                        <option value="../{{ park.pk }}/park_details/">{{ park.name }}</option>
+                        {% if park.name == "‎" %}
+                            <option value="{% url 'Washington' %}"> &nbsp; </option>
+                        {% else %}
+                            <option value="../{{ park.pk }}/park_details/">{{ park.name }}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
 
                 <div class="form_button_area">
-                    <a href=""><button type="button" class="form_button">*disabled placeholder*</button></a>
                     <a href="{% url 'parks' %}"><button type="button" class="form_button">Choose a different state</button></a>
                 </div>
             </div>
@@ -30,7 +33,11 @@
             <h4>The following locations are part of the national park system:</h4>
             {% for park in parklist %}
             <ul>
-                <li>🌲{{park.name}}</li>
+                {% if park.name == "‎" %}
+                    <li>&nbsp; </li>
+                {% else %}
+                    <li>🌲{{park.name}}
+                {% endif %}
             </ul>
             {% endfor %}
      </div>

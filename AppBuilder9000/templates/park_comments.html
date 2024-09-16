@@ -28,10 +28,14 @@
             <h2>Memorable sights:</h2>
             <table>
                 {% for comment in comments %}
-                    <tr>
-                        <td>{{comment.Park_name}}:</td>
-                        <td><b>{{ comment.Memorable_creatures_or_sights_seen }}</b></td>
-                    </tr>
+                    {% if comment.Memorable_creatures_or_sights_seen == "" %}
+                        <tr><td> &nbsp; </td></tr>
+                    {% else %}
+                        <tr>
+                            <td>{{comment.Park_name}}:</td>
+                            <td><b>{{ comment.Memorable_creatures_or_sights_seen }}</b></td>
+                        </tr>
+                    {% endif %}
                 {% endfor %}
             </table>
         </div>
