@@ -10,7 +10,7 @@ The Appbuilder9000 website was created to help hobbyists keep track of their int
 
 ### Story 1:
 
-Ever since 1986, a nonprofit organization (Eastern National) has released sticker sets to sell and free ink cancellation stamps to visitor centers around the United States, as part of their mission to encourage national park visitation and education.  
+Ever since 1986, a nonprofit organization (Eastern National) has released sticker sets for National Park Service stores to sell and mailed free ink cancellation stamps to visitor centers around the United States, as part of their mission to encourage national park visitation and education.  
 >_"As a hobbyist collector of those national park passport stamps/stickers who has recently moved to Washington state, I would like to be able to quickly find a list of all the national park system locations around my new home in order to add NPS passport products from all of them to my personal collection."_
 
 ### Story 2:
