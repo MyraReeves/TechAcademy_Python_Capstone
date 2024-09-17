@@ -17,51 +17,131 @@ Ever since 1986, a nonprofit organization (Eastern National) has released sticke
 
 >_"As a local hiking enthusiast who enjoys sharing personal perspective about my adventures and reading the experiences of others, I want to be able to leave public comments after visiting a national park and read the visitation comments left by others."_
 
+### Story 3:
+
+> _"As an avid collector of comic books, I would like an app to help me keep track of my ever-changing collection. I need the ability to add newly acquired comics to my inventory list and delete others as I trade or sell them.  Links to websites where I can research the monetary value of previously acquired or future desired copies would be very helpful to me.  To avoid mistakes occurring in my collection list, please allow me to edit my collection entries and ask me for confirmation before I delete an item from the database."_
+
 <br>
 
-## Code Summaries
+## Code / Project Build Description
 
-I added links to both a national park themed app and a comic book collection app onto the homepage and navigation menu for Appbuilder9000.
+I added links to both a national park themed app and a comic book collection app into the app directory and top navigation icon menu of the Appbuilder9000 homepage. The pages of each app also included a dropdown navigation menu in the upper left corner using Bootstrap codes.
 
-A "Washington Park" class was created so that all national park system locations inside the state of Washington could be saved to a database.  With the goal in mind of providing the general public with basic visitation information, database fields inside the table included park name, park type, location, basic contact information, visitor center hours, and a brief park description including links to the official, U.S. government-run informational websites.  To preserve informational accuracy and discourage tampering, access to CRUD control of this database table was restricted to dev team admins, with the data inside being read-only to the general public.
+Screenshots of these navigation links:
+
+![Screenshot showing top of Appbuilder9000 homepage](AppbuilderScreenshot1.png)
+
+&
+
+![Screenshot showing App Directory section of Appbuilder9000 homepage](AppbuilderScreenshot2.png)
+
+&
+
+![Close-up of one of the Bootstrap-generated dropdown navigation menu with "hamburger" symbol](Screenshot_Bootstrap_Navigation_Dropdown.png)
+
+Initial tests of my apps indicated difficulty for users when attempting to select the first entries within the HTML page dropdown menus.  As a quick and easy fix to this problem, the first entries in all database tables were left blank and If/Else code statements were used within all code loops to skip displaying any information from those blank entries on the database content viewing webpages. Coding instructions were included so that if a user accidentally selects the blank/dummy entry at the top of the list, the web browser will automatically redirected to remain on the same page, thereby appearing to the user as if nothing happened.
+
+### National Park App - Phase One
+
+A "Washington Park" class was created so that all national park system locations inside the state of Washington could be saved to a database.  With the goal in mind of providing the general public with basic visitation information, database fields inside the table included park name, park type, location, basic contact information, visitor center hours, and a brief park description including links to the official, U.S. government-run informational websites.  To preserve informational accuracy and discourage tampering, access to CRUD control of this information was restricted to dev team admins, with the data inside being read-only to the general public.
 
 The landing page for the national park app was designed such that park locations in other states could be added in the future.
 
 ### _Screenshots of the app's GUI for users to view park information stored in the database:_
 
 App landing page:
-![Fullscreen view of national park app's landing page](Screenshot1-fullscreen.png)
+
+![Fullscreen view of "Visit Your National Parks" app's landing page](Screenshot1-fullscreen.png)
+
+<br>
 
 Zoomed-in view of state selection area within landing page:
-![Close-up of state selection within app's landing page](Screenshot1.png)
+
+![Close-up of state selection within app's landing page showing light green colored "Washington" link](Screenshot1.png)
 
 <br>
 
 Washington state webpage:
+
 ![Fullscreen view of Washington parks webpage](Screenshot2-fullscreen.png)
 
 Close-up of park selection dropdown on the Washington state webpage:
-![Screenshot of park dropdown menu](Screenshot2.png)
+
+![Screenshot of park dropdown menu showing multiple WA parks to choose from](Screenshot2.png)
 
 Fullscreen view of a selected park's information being displayed to a user:
+
 ![Screenshot of table information for BIJAEM site](Screenshot3.png)
 
 <br>
 
-Creation and Read access was granted to users via HTML pages.
+<br>
+
+### National Park App - Phase Two
+
+A "Visitor Comment" class was created for storing visitation notes added by website users into the database.  Since the intention of the national park app is that it will eventually be expanded in the future to include all parks in all U.S. states, I designed the comments section to be useable for any NPS location.  Comment input fields included experiential information such as memorable sights/descriptions of the user's visit, user-generated tips for other park visitors, etc., in addition to more measurable/quantifiable data such as which specific park had been visited, what the weather had been like, etc.  Creation and Read access was granted to users via HTML page interfaces.  To discourage potential tampering by malicious individuals, editing Updates and/or Deletion control access was reserved only for dev admins.
 
 ### _Screenshots of the GUI for users to create and read visitor comments:_
 
 Zoomed-in view of visitor comment link within app landing page:
-![Close-up view of Visitor Comment button](Screenshot4.png)
 
-Screenshot of webpage form for users to create a new entry within the Visitor Comment database:
-![Fullscreen view of comment form webpage](Screenshot5.png)
+![Close-up view of light green colored "Add visitation notes" button](Screenshot4.png)
 
-Fullscreen view of the webpage where users are able to read Visitor Comment information stored within the database:
-![Fullscreen view of Park Comments webpage](Screenshot6.png)
+<br>
 
-CRUD control was provided to users via HTML pages.
+Screenshot of webpage form for users to leave a new entry within the Visitor Comment table:
+
+![Gray and white colored Park Comments form webpage](Screenshot5.png)
+
+<br>
+
+Fullscreen view of the webpage where users are able to read the Visitor Comment information stored within the database:
+
+![Page showing short visitor quotes in white text above longer descriptions in black text and two boxes at bottom showing memorable sights and visitor tips](Screenshot6.png)
+
+<br>
+
+<br>
+
+### Comic Book Collection App - Phase One
+
+CRUD control was provided to users via a series of HTML form pages.
+
+### _Screenshots of the GUI for users to create and read visitor comments:_
+
+Screenshot of the comic book collection app landing page:
+
+![Screenshot showing tan, brown and black colored landing page of the comic book collection app](Screenshot7.png)
+
+<br>
+
+Close-up view of the button on the app's landing page for a user to add a new entry into their collection database:
+
+![Close-up of green and yellow oval-shaped button that reads "Log a new addition to your collection"](Screenshot8.png)
+
+<br>
+
+"Add Issue" webpage form for a user to submit a new entry:
+
+![Screenshot of the entire "Add to your collection" black, white, and tan colored webpage](Screenshot9.png)
+
+<br>
+
+Close-up of the drop-down selection box on the app's landing page so that a user can select an entry to read, edit, or delete it:
+
+![Close-up of the drop-down selection box on the app's landing page](Screenshot_10.png)
+
+<br>
+
+Screenshot of "Edit Comic" webpage:
+
+![Screenshot showing a black, tan, and white colored webpage with form for editing or deleting an entry](Screenshot_11.png)
+
+<br>
+
+Screenshot of "Confirm Delete" webpage:
+
+![Screenshot of the tan and black colored confirmation webpage](Screenshot_12.png)
 
 If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
 - [ASP.NET Core](https://github.com/aspnet/Home)
