@@ -115,7 +115,7 @@ Screenshot of the app's landing page:
 
 Close-up view of button links at bottom of page leading to external websites:
 
-![Close-up of 5 brown button links with a website name on each](Screenshots\Screenshot_comic_external_links.jpg)
+![Close-up of 5 brown button links with a website name on each](Screenshots/Screenshot_comic_external_links.jpg)
 
 <br>
 
