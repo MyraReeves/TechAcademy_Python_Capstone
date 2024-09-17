@@ -31,15 +31,15 @@ Screenshots of these navigation links:
 
 ![Screenshot showing top of Appbuilder9000 homepage](Screenshots/AppbuilderScreenshot1.png)
 
-~.~.~.~.~.
+~ . ~ . ~ . ~ . ~ .
 
 ![Screenshot showing App Directory section of Appbuilder9000 homepage](Screenshots/AppbuilderScreenshot2.png)
 
-~.~.~.~.~.
+~ . ~ . ~ . ~ . ~ .
 
 ![Close-up of one of the Bootstrap-generated dropdown navigation menu with "hamburger" symbol](Screenshots/Screenshot_Bootstrap_Navigation_Dropdown.png)
 
-Initial tests of my apps indicated difficulty for users when attempting to select the first database entries when using HTML form dropdown menus.  As a quick and easy fix to this problem, the first entries in all database tables were left blank and If/Else code statements were used within all code loops to skip displaying any information from those blank entries on the database content viewing webpages. Coding instructions were included so that if a user accidentally selects the blank/dummy entry at the top of the list, the web browser will automatically redirected to remain on the same page, thereby appearing to the user as if nothing happened.
+Initial tests of my apps indicated difficulty for users when attempting to select the first database entry via an HTML dropdown menu.  As a quick and easy fix to this problem, the first entries in all database tables were left blank and If/Else code statements were used within all code loops to skip displaying any information from those blank entries on the database content viewing pages. The code was written so that if a user accidentally selects the blank/dummy entry at the top of a list, the web browser will automatically redirected to remain on the same page, thereby appearing to the user as if nothing happened.
 
 ### National Park App - Phase One
 
@@ -79,7 +79,7 @@ Fullscreen view of a selected park's information being displayed to a user:
 
 ### National Park App - Phase Two
 
-A "Visitor Comment" class was created for storing visitation notes added by users.  Since the intention of the national park app is that it will eventually be expanded in the future to include all parks in all U.S. states, I designed the comments section to be useable for any NPS location.  Comment input fields included experiential information such as memorable sights/descriptions of the user's visit, user-generated tips for other park visitors, etc., in addition to more measurable/quantifiable data such as which specific park had been visited, what the weather had been like, etc.  Creation and Read access was granted to users via HTML page interfaces.  To discourage potential tampering by malicious individuals, edit Updates and Deletion control was reserved only for dev admins.
+A "Visitor Comment" class was created for storing visitation notes added by users.  Since the intention of the national park app is that it will eventually be expanded in the future to include all parks in all U.S. states, I designed the comments section to be useable for any NPS location.  Comment input fields include experiential information such as memorable sights/descriptions of the user's visit, user-generated tips for other park visitors, etc., in addition to more measurable/quantifiable data such as which specific park had been visited, what the weather had been like, etc.  Creation and Read access was granted to users via HTML page interfaces.  To discourage potential tampering by malicious individuals, edit Updates and Deletion control was reserved only for dev admins.
 
 ### _Screenshots of the GUI for users to create and read visitor comments:_
 
@@ -112,6 +112,10 @@ A "Comicbook Collection" class was created so that users of this separate, secon
 Screenshot of the app's landing page:
 
 ![Screenshot showing the tan, brown and black colored landing page of the comic book collection app](Screenshots/Screenshot7.png)
+
+Close-up view of button links at bottom of page leading to external websites:
+
+![Close-up of 5 brown button links with a website name on each](Screenshots\Screenshot_comic_external_links.jpg)
 
 <br>
 
